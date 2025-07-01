@@ -110,7 +110,7 @@
                             </span>
                         </li>
                     </ul>
-                    <a href="/index">
+                    <a href="/">
     <button>Idi na početnu</button>
 </a>
                     <ul class="flex gap-3 text-sm leading-normal">
