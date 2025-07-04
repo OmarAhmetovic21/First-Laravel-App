@@ -1,0 +1,30 @@
+nav {
+    background-color: #5dade2; /* svijetlo plava */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* da bude u redu */
+    gap: 30px; /* razmak između linkova */
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #d6dbdf; /* blago siva/bijelkasta */
+    color: #2c3e50; /* tamnija za kontrast */
+}

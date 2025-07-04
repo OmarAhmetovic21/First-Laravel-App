@@ -1,19 +1,24 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
-    return view('index');
+    return view('index'); // home ostaje
 });
 
 Route::get('/about', function () {
-    return view('aboutUs');
+    return view('aboutUs.aboutUs');
 });
 
 Route::get('/contact', function () {
-    return view('kontakt');
+    return view('contactUs.kontakt');
 });
+
+Route::get('/welcome', function () {
+    return view('welcome.welcome');
+});
+
+// Ako koristiš kontroler:
+Route::get('/posts', [PostController::class, 'index']);
+
