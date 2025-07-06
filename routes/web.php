@@ -22,3 +22,5 @@ Route::get('/welcome', function () {
 // Ako koristiš kontroler:
 Route::get('/posts', [PostController::class, 'index']);
 
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+
