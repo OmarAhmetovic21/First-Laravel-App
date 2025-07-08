@@ -53,3 +53,13 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
+
+.btn-cancel {
+    background-color: #aaa;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

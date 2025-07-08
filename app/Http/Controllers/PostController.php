@@ -24,4 +24,25 @@ class PostController extends Controller
 
          return redirect('/posts')->with('success', 'Post je uspješno dodan!');
        }
+
+       public function destroy($id)
+{
+    $post = Post::findOrFail($id);
+    $post->delete();
+
+    return redirect('/posts')->with('success', 'Post je uspješno obrisan!');
+}
+
+public function update(Request $request, $id)
+{
+    $post = Post::findOrFail($id);
+    $post->update([
+        'title' => $request->input('title'),
+        'content' => $request->input('content')
+    ]);
+
+    return redirect('/posts')->with('success', 'Post je uspješno ažuriran!');
+}
+
+
 }
